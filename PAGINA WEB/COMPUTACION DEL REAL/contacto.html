@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Computación del Real SLP</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="fuentes.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="estiloscontacto.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/estilos.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="estiloheader.css" media="screen" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+$(function() {
+var btn_movil = $('#nav-mobile'),
+menu = $('#menu').find('ul');
+// Al dar click agregar/quitar clases que permiten el despliegue del menú
+btn_movil.on('click', function (e) {
+e.preventDefault();
+var el = $(this);
+el.toggleClass('nav-active');
+menu.toggleClass('open-menu');
+})
+});
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+	
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<!-- html5.js - IE  9 -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<meta charset="utf-8">
+</head>
+<style type="text/css">
+    body {
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: auto;
+	list-style-image: none;
+	list-style-type: none;
+}
+    a:link,a:active,a:visited,a:hover {
+	text-decoration: none;
+	color: #999;
+}
+
+</style>
+<!--BARRA DE NAVEGACION -->
+<header>
+<a href="#" id="logo">Logo</a>
+<nav id="menu">
+<a href="#" class="nav-mobile" id="nav-mobile"></a>
+<ul>
+<li><a href="index.html">INICIO</a></li>
+<li><a href="toner.html">TONER</a></li>
+<li><a href="rentayventa.html">RENTA Y VENTA DE EQUIPO DE IMPRESIÓN</a></li>
+<li><a href="computo.html">EQUIPO DE CÓMPUTO</a></li>
+<li><a href="servicios.html">SERVICIOS</a></li>
+<li><a href="#">QUIENES SOMOS</a></li>
+<li><a href="contacto.html">CONTACTO</a></li>
+</ul>
+</nav>
+</header>
+<!--ESCRIBENOS -->
+<div class="conttoner">
+<div class="colbullet">
+<div class="col1B">
+<div class="tituloseccion">QUEREMOS CONOCERTE ESCRÍBENOS O LLÁMANOS AL (444)1·66·35·67 y 68</div>
+<div class="textoempresa">Ponte en contacto con nosotros y uno de nuestros asesores podrá birndarte mayor información a la brevedad.  </div>
+</div>
+</div>
+<div class="colimgbullet"><img src="images/contacto.jpg" width="100%" height="auto"></div>
+</div>
+
+
+<div class="cont100">
+<div class="conttextoformulario">
+<div class="enccoltipotoner">ESCRÍBENOS</div>
+<div class="iconstipostoner"><img src="images/iconmail.png" width="100%" height="auto"></div>
+<div class="textotipostoner">
+Mail:<br>
+hola@computaciondelreal.com.mx<br><br>
+
+Horarios de atención: <br>
+Lunes a Viernes 9:00 AM a 7:00 PM Sábados de 10:00 AM a 2:00 PM.<br><br>
+
+Entrega a domicilio en zona metropolitana en San Luis Potosí, SLP
+</div>
+</div>
+
+<div class="contformulario">
+<section class="formulario">
+<form action="contacto.php" method="post">
+<label for="nombre">Nombre:</label>
+<input id="nombre" type="text" name="nombre"  required />
+
+<label for="empresa">Empresa:</label>
+<input id="empresa" type="text" name="empresa"  required />
+
+<label for="email">Email:</label>
+<input id="email" type="email" name="email"  required />
+
+<label for="telefono">Teléfono:</label>
+<input id="telefono" type="telefono" name="telefono"  required />
+
+<label for="telefono">Marca:</label>
+<input id="telefono" type="marca" name="marca"  required />
+
+<label for="email">Modelo:</label>
+<input id="email" type="modelo" name="modelo"  required />
+
+
+<label for="mensaje">Cotizar:</label>
+<textarea id="mensaje" name="mensaje"  required></textarea>
+
+<input id="submit" type="submit" name="submit" value="Enviar" />
+</form>
+</section>
+</div>
+</div>
+
+<!--PROMOCION -->
+<div class="conttoner2">
+<div class="colbullet2">
+<div class="col1B">
+<div class="tituloseccion2">VISÍTANOS EN NUESTRA TIENDA O LLÁMANOS (444)1·66·35·67 y 68</div>
+<div class="textoempresa">Estamos a tus órdenes, nuestro principal objetivo es servirte y ofrecerte los mejores productos en cómputo, impresión y remanufactura de toner.  </div>
+</div>
+</div>
+<div class="colimgbullet2"><img src="images/ubicacion.jpg" width="100%" height="auto"></div>
+</div>
+
+
+<div class="cont100">
+<div class="conttextoformulario">
+<div class="enccoltipotoner">VISÍTANOS</div>
+<div class="iconstipostoner2"><img src="images/iconubicacion.png" width="100%" height="auto"></div>
+<div class="textotipostoner">
+Mariano Jiménez 474 Col. Alamitos C.P. 78280, San Luis Potosí, S.L.P.<br><br>
+
+Horarios de atención: <br>
+Lunes a Viernes 9:00 AM a 7:00 PM Sábados de 10:00 AM a 2:00 PM.<br><br>
+
+Entrega a domicilio en zona metropolitana en San Luis Potosí, S.L.P
+</div>
+</div>
+
+<div class="contmapa" style="width:64%;height:475px;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3695.477935912475!2d-100.98454059999997!3d22.145872200000017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1398314338974" width="100%" height="475px" frameborder="0" style="border:0"></iframe>
+</div>
+<div class="contmapa2" style="width:64%;height:454px;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3695.477935912475!2d-100.98454059999997!3d22.145872200000017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1398314338974" width="100%" height="454px" frameborder="0" style="border:0"></iframe>
+</div>
+<div class="contmapa3" style="width:64%;height:448px;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3695.477935912475!2d-100.98454059999997!3d22.145872200000017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1398314338974" width="100%" height="448px" frameborder="0" style="border:0"></iframe>
+</div>
+<div class="contmapa4" style="width:64%;height:452px;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3695.477935912475!2d-100.98454059999997!3d22.145872200000017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1398314338974" width="100%" height="452px" frameborder="0" style="border:0"></iframe>
+</div>
+<div class="contmapa5" style="width:64%;height:490px;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3695.477935912475!2d-100.98454059999997!3d22.145872200000017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1398314338974" width="100%" height="490px" frameborder="0" style="border:0"></iframe>
+</div>
+<div class="contmapa6" style="width:95%;height:320px;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3695.477935912475!2d-100.98454059999997!3d22.145872200000017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1398314338974" width="100%" height="320px" frameborder="0" style="border:0"></iframe>
+</div>
+<div class="contmapa7" style="width:100%;height:242px;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3695.477935912475!2d-100.98454059999997!3d22.145872200000017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1398314338974" width="100%" height="242px" frameborder="0" style="border:0"></iframe>
+</div>
+</div>
+
+<div class="cont100">
+<div class="contcentral">
+<div class="titulobestcomputer">Best computer solutions</div>
+</div>
+</div>
+
+<div class="cont100cierre">
+<div class="contcentralcierre">
+<div class="contcontactoizq">¡Contáctanos!<br>
+1·66·35·67 | 68</div>
+<div class="contcontactocentral">Mariano Jiménez 474  Col. Alamitos C.P. 78280,  San Luis Potosí, S.L.P. Todos los derechos reservados 2014.</div>
+<div class="contcontactoder">¡Síguenos!
+<div class="contimgface"><img src="images/logoface.png" width="25" height="25"> </div></div>
+</div>
+</div>
+</body>
+</html>

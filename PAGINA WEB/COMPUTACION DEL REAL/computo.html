@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Computación del Real SLP</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="fuentes.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="estiloscomputo.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/estilos.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="estiloheader.css" media="screen" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+$(function() {
+var btn_movil = $('#nav-mobile'),
+menu = $('#menu').find('ul');
+// Al dar click agregar/quitar clases que permiten el despliegue del menú
+btn_movil.on('click', function (e) {
+e.preventDefault();
+var el = $(this);
+el.toggleClass('nav-active');
+menu.toggleClass('open-menu');
+})
+});
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+	
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<!-- html5.js - IE  9 -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<meta charset="utf-8">
+</head>
+<style type="text/css">
+    body {
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: auto;
+	list-style-image: none;
+	list-style-type: none;
+}
+    a:link,a:active,a:visited,a:hover {
+	text-decoration: none;
+	color: #999;
+}
+
+</style>
+<!--BARRA DE NAVEGACION -->
+<header>
+<a href="#" id="logo">Logo</a>
+<nav id="menu">
+<a href="#" class="nav-mobile" id="nav-mobile"></a>
+<ul>
+<li><a href="index.html">INICIO</a></li>
+<li><a href="toner.html">TONER</a></li>
+<li><a href="rentayventa.html">RENTA Y VENTA DE EQUIPO DE IMPRESIÓN</a></li>
+<li><a href="computo.html">EQUIPO DE CÓMPUTO</a></li>
+<li><a href="servicios.html">SERVICIOS</a></li>
+<li><a href="#">QUIENES SOMOS</a></li>
+<li><a href="contacto.html">CONTACTO</a></li>
+</ul>
+</nav>
+</header>
+<!--PROMOCION -->
+<div class="contpromocion">
+<div class="colbullet">
+<div class="col1B">
+<div class="tituloseccion">¡APROVECHA NUESTRA PROMOCIÓN EN TABLETS DURANTE ESTE MES!</div>
+<div class="textoempresa">Los precios más bajos y las mejores marcas están durante este mes en Computación del Real. Hasta 18 meses sin intereses con tarjeta Bancomer.  </div>
+<div class="buscartoner">Ver equipos en venta</div>
+</div>
+</div>
+<div class="colimgbullet"><img src="images/promocion.jpg" width="100%" height="auto"></div>
+</div>
+<!--PROMOCION -->
+<div class="cont100">
+<div class="cont4columnas">
+<div class="col1">
+<div class="enccol1">Samsung Galaxy II</div>
+<div class="imgrenta"><img src="imgequipo/tablet1.png" width="100%" height="auto"></div>
+<div class="contdetalle">
+<div class="detalle">Ver más detalles</div>
+<div class="detalleicon"><img src="images/iconvermaspng.png" width="100%" height="auto"></div>
+</div>
+</div>
+<div class="col2">
+<div class="enccol1">Samsung Galaxy II</div>
+<div class="imgrenta"><img src="imgequipo/tablet1.png" width="100%" height="auto"></div>
+<div class="contdetalle">
+<div class="detalle">Ver más detalles</div>
+<div class="detalleicon"><img src="images/iconvermaspng.png" width="100%" height="auto"></div>
+</div>
+</div>
+<div class="col3">
+<div class="enccol1">Samsung Galaxy II</div>
+<div class="imgrenta"><img src="imgequipo/tablet1.png" width="100%" height="auto"></div>
+<div class="contdetalle">
+<div class="detalle">Ver más detalles</div>
+<div class="detalleicon"><img src="images/iconvermaspng.png" width="100%" height="auto"></div>
+</div>
+</div>
+<div class="col4">
+<div class="enccol1">Samsung Galaxy II</div>
+<div class="imgrenta"><img src="imgequipo/tablet1.png" width="100%" height="auto"></div>
+<div class="contdetalle">
+<div class="detalle">Ver más detalles</div>
+<div class="detalleicon"><img src="images/iconvermaspng.png" width="100%" height="auto"></div>
+</div>
+</div>
+</div>
+</div>
+<!--APARTADO EQUIPO DE COMPUTO -->
+<div class="contpromocion2">
+<div class="colbullet">
+<div class="col1B">
+<div class="tituloseccion">EQUIPO DE CÓMPUTO, LAPTOPS, IMPRESORAS, ACCESORIOS Y MÁS</div>
+<div class="textoempresa">Tenemos equipos de las mejores marcas así como también computadoras armadas. Envíamos tus especificaciones y te haremos llegar tu cotización.  </div>
+<div class="buscartoner">Ver equipos en venta</div>
+</div>
+</div>
+<div class="colimgbullet2"><img src="images/equipocomputo.jpg" width="100%" height="auto"></div>
+</div>
+<!--TONER -->
+<div class="cont100">
+<div class="cont6columnas">
+<div class="coliconcomputadoras"id="anclacatalogo">
+<div class="enccomputo">Computadoras</div>
+<div class="iconscomputo"><img src="images/iconcomputadoras.png" width="100%" height="auto"></div>
+</div>
+<div class="coliconlaptop">
+<div class="enccomputo">Laptops</div>
+<div class="iconscomputo"><img src="images/iconlaptops.png" width="100%" height="auto"></div>
+</div>
+<div class="colicontablets">
+<div class="enccomputo">Tablets</div>
+<div class="iconscomputo"><img src="images/icontablets.png" width="100%" height="auto"></div>
+</div>
+<div class="coliconmulti">
+<div class="enccomputo">Impresoras</div>
+<div class="iconscomputo"><img src="images/iconimpresoras.png" width="100%" height="auto"></div>
+</div>
+<div class="coliconmonitores">
+<div class="enccomputo">Monitores</div>
+<div class="iconscomputo"><img src="images/iconmonitores.png" width="100%" height="auto"></div>
+</div>
+<div class="coliconaccesorios">
+<div class="enccomputo">Accesorios</div>
+<div class="iconscomputo"><img src="images/iconaccesorios.png" width="100%" height="auto"></div>
+</div>
+</div>
+</div>
+<!--PROMOCION -->
+<div class="cont100">
+<div class="cont4columnas">
+<div class="col1">
+<div class="enccol1">Samsung Galaxy II</div>
+<div class="imgrenta"><img src="imgequipo/tablet1.png" width="100%" height="auto"></div>
+<div class="contdetalle">
+<div class="detalle">Ver más detalles</div>
+<div class="detalleicon"><img src="images/iconvermaspng.png" width="100%" height="auto"></div>
+</div>
+</div>
+<div class="col2">
+<div class="enccol1">Samsung Galaxy II</div>
+<div class="imgrenta"><img src="imgequipo/tablet1.png" width="100%" height="auto"></div>
+<div class="contdetalle">
+<div class="detalle">Ver más detalles</div>
+<div class="detalleicon"><img src="images/iconvermaspng.png" width="100%" height="auto"></div>
+</div>
+</div>
+<div class="col3">
+<div class="enccol1">Samsung Galaxy II</div>
+<div class="imgrenta"><img src="imgequipo/tablet1.png" width="100%" height="auto"></div>
+<div class="contdetalle">
+<div class="detalle">Ver más detalles</div>
+<div class="detalleicon"><img src="images/iconvermaspng.png" width="100%" height="auto"></div>
+</div>
+</div>
+<div class="col4">
+<div class="enccol1">Samsung Galaxy II</div>
+<div class="imgrenta"><img src="imgequipo/tablet1.png" width="100%" height="auto"></div>
+<div class="contdetalle">
+<div class="detalle">Ver más detalles</div>
+<div class="detalleicon"><img src="images/iconvermaspng.png" width="100%" height="auto"></div>
+</div>
+</div>
+</div>
+</div>
+<!--PROMOCION -->
+<div class="cont100">
+<div class="cont4columnas">
+<div class="col1">
+<div class="enccol1">Samsung Galaxy II</div>
+<div class="imgrenta"><img src="imgequipo/tablet1.png" width="100%" height="auto"></div>
+<div class="contdetalle">
+<div class="detalle">Ver más detalles</div>
+<div class="detalleicon"><img src="images/iconvermaspng.png" width="100%" height="auto"></div>
+</div>
+</div>
+<div class="col2">
+<div class="enccol1">Samsung Galaxy II</div>
+<div class="imgrenta"><img src="imgequipo/tablet1.png" width="100%" height="auto"></div>
+<div class="contdetalle">
+<div class="detalle">Ver más detalles</div>
+<div class="detalleicon"><img src="images/iconvermaspng.png" width="100%" height="auto"></div>
+</div>
+</div>
+<div class="col3">
+<div class="enccol1">Samsung Galaxy II</div>
+<div class="imgrenta"><img src="imgequipo/tablet1.png" width="100%" height="auto"></div>
+<div class="contdetalle">
+<div class="detalle">Ver más detalles</div>
+<div class="detalleicon"><img src="images/iconvermaspng.png" width="100%" height="auto"></div>
+</div>
+</div>
+<div class="col4">
+<div class="enccol1">Samsung Galaxy II</div>
+<div class="imgrenta"><img src="imgequipo/tablet1.png" width="100%" height="auto"></div>
+<div class="contdetalle">
+<div class="detalle">Ver más detalles</div>
+<div class="detalleicon"><img src="images/iconvermaspng.png" width="100%" height="auto"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cont100">
+<div class="conttextoformulario">
+<div class="enccoltipotoner">SOLICITAR COTIZACIÓN</div>
+<div class="iconstipostoner"><img src="images/iconescribenos.png" width="100%" height="auto"></div>
+<div class="textotipostoner">Si deseas conocer más a detalle los beneficios de arrendar equipos de impresión ó multifuncionales, cotizar un equipo ó que un asesor te brinde mayor información, llena el siguiente formulario y coméntanos tus necesidades, nos pondremos en contacto a la brevedad ó llámanos al teléfono 1·66·35·67 y 68 para brindarte mayor información.</div>
+</div>
+
+<div class="contformulario">
+<section class="formulario">
+<form action="contacto.php" method="post">
+<label for="nombre">Nombre:</label>
+<input id="nombre" type="text" name="nombre"  required />
+
+<label for="empresa">Empresa:</label>
+<input id="empresa" type="text" name="empresa"  required />
+
+<label for="email">Email:</label>
+<input id="email" type="email" name="email"  required />
+
+<label for="telefono">Teléfono:</label>
+<input id="telefono" type="telefono" name="telefono"  required />
+
+<label for="marca">Marca:</label>
+<input id="marca" type="marca" name="marca"  required />
+
+<label for="modelo">Modelo:</label>
+<input id="modelo" type="modelo" name="modelo"  required />
+
+
+<label for="cotizar">Cotizar:</label>
+<textarea id="cotizar" name="cotizar"  required></textarea>
+
+<input id="submit" type="submit" name="submit" value="Enviar" />
+</form>
+</section>
+</div>
+</div>
+
+<div class="cont100">
+<div class="contcentral">
+<div class="titulobestcomputer">Best computer solutions</div>
+</div>
+</div>
+
+<div class="cont100cierre">
+<div class="contcentralcierre">
+<div class="contcontactoizq">¡Contáctanos!<br>
+1·66·35·67 | 68</div>
+<div class="contcontactocentral">Mariano Jiménez 474  Col. Alamitos C.P. 78280,  San Luis Potosí, S.L.P. Todos los derechos reservados 2014.</div>
+<div class="contcontactoder">¡Síguenos!
+<div class="contimgface"><img src="images/logoface.png" width="25" height="25"> </div></div>
+</div>
+</div>
+</body>
+</html>

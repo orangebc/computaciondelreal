@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Computación del Real SLP</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="fuentes.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="estilosservicios.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/estilos.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="estiloheader.css" media="screen" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+$(function() {
+var btn_movil = $('#nav-mobile'),
+menu = $('#menu').find('ul');
+// Al dar click agregar/quitar clases que permiten el despliegue del menú
+btn_movil.on('click', function (e) {
+e.preventDefault();
+var el = $(this);
+el.toggleClass('nav-active');
+menu.toggleClass('open-menu');
+})
+});
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+	
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<!-- html5.js - IE  9 -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<meta charset="utf-8">
+</head>
+<style type="text/css">
+    body {
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: auto;
+	list-style-image: none;
+	list-style-type: none;
+}
+    a:link,a:active,a:visited,a:hover {
+	text-decoration: none;
+	color: #999;
+}
+
+</style>
+<!--BARRA DE NAVEGACION -->
+<header>
+<a href="#" id="logo">Logo</a>
+<nav id="menu">
+<a href="#" class="nav-mobile" id="nav-mobile"></a>
+<ul>
+<li><a href="index.html">INICIO</a></li>
+<li><a href="toner.html">TONER</a></li>
+<li><a href="rentayventa.html">RENTA Y VENTA DE EQUIPO DE IMPRESIÓN</a></li>
+<li><a href="computo.html">EQUIPO DE CÓMPUTO</a></li>
+<li><a href="servicios.html">SERVICIOS</a></li>
+<li><a href="contacto.html">QUIENES SOMOS</a></li>
+<li><a href="contacto.html">CONTACTO</a></li>
+</ul>
+</nav>
+</header>
+
+<div class="conttoner">
+<div class="colbullet">
+<div class="col1B">
+<div class="tituloseccion">REMANUFACTURA DE TONER, RENTA Y VENTA DE EQUIPOS DE IMPRESIÓN, CÓMPUTO</div>
+<div class="textoempresa">Ofrecemos un abanico de soluciones para la industria, desde el abastecimiento de equipos e insumos de cómputo, hasta el desarrollo de sitios web. </div>
+</div>
+</div>
+<div class="colimgbullet"><img src="images/servicios2.jpg" width="100%" height="auto"></div>
+</div>
+<!--TONER -->
+<div class="cont100">
+<div class="cont5columnas">
+<div class="col1">
+<div class="enccol1">Remanufactura de toner, original y compatible</div>
+<div class="iconstipostoner"><img src="images/iconremanufactura.png" width="100%" height="auto"></div>
+<div class="exptoners">Con el reconocimiento del principal distribuidor de insumos a nivel internacional, Static Control, realizamos la remanufactura de cada toner garantizándote así la calidad de nuestro trabajo.</div>
+<div class="closecol1"></div>
+</div>
+
+<div class="col2">
+<div class="enccol2">Venta y renta de equipos de impresión</div>
+<div class="iconstipostoner"><img src="images/iconimpresionserv.png" width="100%" height="auto"></div>
+<div class="exptoners">Obtén grandes beneficios al contar con centros de impresión y fotocopiado de alta calidad en arrendamiento, revisa nuestros planes y consulta con los asesores el plan que más beneficios te ofrezca.</div>
+<div class="closecol2"></div>
+</div>
+
+<div class="col3">
+<div class="enccol3">Venta de equipo de cómputo y accesorios</div>
+<div class="iconstipostoner"><img src="images/iconcomputoserv.png" width="100%" height="auto"></div>
+<div class="exptoners">Somos distribuidores de las principales marcas en equipo de cómputo, contamos con computadoras, multifuncionales, tablets, periféricos, accesorios, software & hardware y mucho más.</div>
+<div class="closecol3"></div>
+</div>
+
+<div class="col4">
+<div class="enccol4">Reparación y mantenimiento de equipo de cómputo</div>
+<div class="iconstipostoner"><img src="images/iconreparacionserv.png" width="100%" height="auto"></div>
+<div class="exptoners">Realizamos servicios preventivos así como reparación equipos de cómputo. Ponte en manos de expertos donde la honestidad, profesionalismo y satisfacción de nuestros clientes son nuestro principal objetivo.</div>
+<div class="closecol4"></div>
+</div>
+
+<div class="col5">
+<div class="enccol5">Diseño de Sitios Web y tiendas virtuales</div>
+<div class="iconstipostoner"><img src="images/iconwebserv.png" width="100%" height="auto"></div>
+<div class="exptoners">Si deseas ampliar tu mercado y posicionar tu negocio en el mundo de la tecnología y el internet, contamos con un equipo de profesionales que con gusto realizarán tu Sitio Web de acuerdo a tus necesidades.</div>
+<div class="closecol5"></div>
+</div>
+</div>
+</div>
+
+
+
+<div class="cont100bestcomputer">
+<div class="contcentral">
+<div class="titulobestcomputer">Best computer solutions</div>
+</div>
+</div>
+
+<div class="cont100cierre">
+<div class="contcentralcierre">
+<div class="contcontactoizq">¡Contáctanos!<br>
+(444)1·66·35·67 y 68</div>
+<div class="contcontactocentral">Mariano Jiménez 474  Col. Alamitos C.P. 78280,  San Luis Potosí, S.L.P. Todos los derechos reservados 2014.</div>
+<div class="contcontactoder">¡Síguenos!
+<div class="contimgface"><img src="images/logoface.png" width="25" height="25"> </div></div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,189 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+	font: 14px 'roboto_condensedlight', sans-serif;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+header, nav{
+	display: block;
+}
+
+/* Definimos un ancho 100% y una altura fija para nuestro menú */
+header{
+	height: 80px;
+	position: relative;
+	width: 100%;
+	background: #0da1e5; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBkYTFlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ4JSIgc3RvcC1jb2xvcj0iIzU0Y2RmMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwODhmZDgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(left, #0da1e5 0%, #54cdf2 48%, #088fd8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#0da1e5), color-stop(48%,#54cdf2), color-stop(100%,#088fd8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, #0da1e5 0%,#54cdf2 48%,#088fd8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #0da1e5 0%,#54cdf2 48%,#088fd8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, #0da1e5 0%,#54cdf2 48%,#088fd8 100%); /* IE10+ */
+	background: linear-gradient(to right, #0da1e5 0%,#54cdf2 48%,#088fd8 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0da1e5', endColorstr='#088fd8',GradientType=1 );
+}
+
+/* El logo sera flotado a la izquierda */
+#logo{
+	display: block;
+	float: left;
+	width: 200px;
+	height: 65px;
+	text-indent: -9999px;
+	background-image: url(images/logocr-large.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	margin-top: 6px;
+	margin-right: 10px;
+	margin-bottom: 0;
+	margin-left: 10px;
+    }
+
+    /* Nuestro nav con id #menu lo flotaremos a la derecha*/
+    #menu{float: right;}   
+
+    /* Quitamos estilos por defecto de el tag UL */
+    #menu ul{
+	list-style: none;
+	font-size: 1.0 em;
+    }
+        
+    /* Centramos y ponemos los textos en mayuscula */
+    #menu li{
+    display: block;
+    float: left;
+    text-align: center;
+    }
+            
+    /* Damos estilo a nuestros enlaces */
+    #menu li a{
+	font-size: 1.0 em;
+	display: block;
+	color: #FFF;
+	text-decoration: none;
+	height: 80px;
+	line-height: 75px;
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0;
+	padding-left: 10px;
+    }
+    #menu li a:hover{
+	font-family: "roboto_condensedlight", sans-serif;
+	color: #FFFFFF;
+	font-size: 1.0 em;
+    }
+    /* Estilos #nav-mobile y lo ocultamos */
+    #nav-mobile{
+	display: none;
+	width: 60px;
+	height: 80px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	opacity: .6;
+	background-image: url(images/nav.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	float: left;
+    }   
+    /* Agregaremos esta clase a #nav-mobile, cuando el menu mobile haya sido desplegado */
+    #nav-mobile.nav-active{
+	font-family: "roboto_condensedlight", sans-serif;
+    opacity: 1;
+    }
+    /* Content */
+    #content{
+	width: 80%;
+	margin: 60px 10%;
+	text-align: center;
+	overflow: hidden;
+    }
+    h2{
+	font-size: 50px;
+	text-transform: uppercase;
+	color: #624c3f;
+    }
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*
+    MEDIA QUERY
+*/
+
+@media only screen and (max-width: 768px) {
+    h2{
+	font-family: "roboto_condensedlight", sans-serif;
+	font-size: 1.0 em;
+	color: #FFFFFF;
+    }
+ 
+ 
+	/* mostramos #nav-mobile */
+    #nav-mobile{
+	display: block;
+    }
+    /* Fijamos nuestro nav en 100% ancho y dejamos de flotarlo  */
+    #menu{
+	width: 100%;
+	float: none;
+	padding-top: 75px;
+	position: relative;
+	z-index: 1;
+    }
+    /* Convertimos nuestra lista de enlaces en un menú horizontal */
+    #menu ul{
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.5);
+	box-shadow: 0 1px 2px rgba(0,0,0,.5);
+	max-height: 0;
+	overflow: hidden;
+    }
+    /* estilos para los LI del menu */
+    #menu li{
+	font-family: "roboto_condensedlight", sans-serif;
+	font-size: 1.0 em;
+	border-bottom: 1px solid #282b30;
+	float: none;
+	background-color: #333333;
+	position: relative;
+	height: auto;
+    }
+
+    /* Quitamos el borde del ultimo item del menú */
+    #menu li:last-child{
+	border-bottom: 0;
+}
+    #menu li a{
+    padding: 15px 0;
+    height: auto;
+    line-height: normal;
+    }
+    #menu li a:hover{
+	font-family: "roboto_condensedlight", sans-serif;
+	font-size: 1.0 em;
+	background-color: #333333;
+}
+
+    /* Agregamos una animación al despligue del menú */
+    #menu ul.open-menu{
+	max-height: 600px;
+	-webkit-transition: max-height .4s;
+	-moz-transition: max-height .4s;
+	-ms-transition: max-height .4s;
+	-o-transition: max-height .4s;
+	transition: max-height .4s;
+        }
+		}
+		
+	/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*
+    MEDIA QUERY
+*/
+

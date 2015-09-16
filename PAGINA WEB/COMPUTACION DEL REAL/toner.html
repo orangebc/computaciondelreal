@@ -1,0 +1,1076 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Computación del Real SLP</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="fuentes.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="estilostoner.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/estilos.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="estiloheader.css" media="screen" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+$(function() {
+var btn_movil = $('#nav-mobile'),
+menu = $('#menu').find('ul');
+// Al dar click agregar/quitar clases que permiten el despliegue del menú
+btn_movil.on('click', function (e) {
+e.preventDefault();
+var el = $(this);
+el.toggleClass('nav-active');
+menu.toggleClass('open-menu');
+})
+});
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+ 		  
+	 $("#hpremanufactura").click(function(event){
+     event.preventDefault();
+     $("#hp2").show(600);
+	 $("#c4191a").hide(600);
+	 $("#q6511a").hide(600);
+     $("#samsung2remanufactura").hide(600);
+	 });
+	  
+	 $("#samsungremanufactura").click(function(event){
+     event.preventDefault();
+     $("#samsung2remanufactura").show(600);
+     $("#hp2").hide(600);
+	 });
+	 
+	 $("#hpmodelosremanufactura").click(function(event){
+     event.preventDefault();
+     $("#c4191a").show(600);
+	 $("#q6511a").hide(600);
+     });
+	  $("#hpq6511a").click(function(event){
+     event.preventDefault();
+     $("#q6511a").show(600);
+	 $("#c4191a").hide(600);
+     });
+	 
+	 $("#hpcompatible").click(function(event){
+     event.preventDefault();
+     $("#hp2compatible").show(600);
+     $("#samsung2compatible").hide(600);
+	  $("#q6511acompatible").hide(600);
+	 });
+	  $("#samsungcompatible").click(function(event){
+     event.preventDefault();
+     $("#samsung2compatible").show(600);
+     $("#hp2compatible").hide(600);
+	 });
+	 
+	 $("#hpmodeloscompatible").click(function(event){
+     event.preventDefault();
+     $("#c4191acompatible").show(600);
+	 $("#q6511acompatible").hide(600);
+     });
+	  $("#hpqc4191acompatible").click(function(event){
+     event.preventDefault();
+     $("#c4191acompatible").show(600);
+	 $("#q6511acompatible").hide(600);
+     });
+	  $("#hpq6511acompatible").click(function(event){
+     event.preventDefault();
+     $("#q6511acompatible").show(600);
+	 $("#c4191acompatible").hide(600);
+     });
+
+});
+ </script>	
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<!-- html5.js - IE  9 -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<meta charset="utf-8">
+</head>
+<style type="text/css">
+    body {
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: auto;
+	list-style-image: none;
+	list-style-type: none;
+}
+    a:link,a:active,a:visited,a:hover {
+	text-decoration: none;
+	color: #999;
+}
+
+</style>
+<!--BARRA DE NAVEGACION -->
+<header>
+<a href="#" id="logo">Logo</a>
+<nav id="menu">
+<a href="#" class="nav-mobile" id="nav-mobile"></a>
+<ul>
+<li><a href="index.html">INICIO</a></li>
+<li><a href="toner.html">TONER</a></li>
+<li><a href="rentayventa.html">RENTA Y VENTA DE EQUIPO DE IMPRESIÓN</a></li>
+<li><a href="computo.html">EQUIPO DE CÓMPUTO</a></li>
+<li><a href="servicios.html">SERVICIOS</a></li>
+<li><a href="#">QUIENES SOMOS</a></li>
+<li><a href="contacto.html">CONTACTO</a></li>
+</ul>
+</nav>
+</header>
+
+<div class="conttoner">
+<div class="colbullet1">
+<div class="col1B">
+<div class="tituloseccion1">REMANUFACTURA TUS TONERS SIN PERDER COLOR, CALIDAD, NI RENDIMIENTO</div>
+<div class="textoempresa">
+Te ofrecemos remanufactura de alta calidad avalada por Static Control, líder en desarrollo, fabricación de insumos y herramientas para la remanufactura de toner y tinta</div>
+<a href="toner.html#ancla"><div class="buscartoner">Buscar el modelo de mi toner</div></a>
+</div>
+</div>
+<div class="colimgbullet1"><img src="images/tonerprint.jpg" width="100%" height="auto"></div>
+</div>
+<!--TONER -->
+<div class="cont100">
+<div class="cont4columnas">
+<div class="col1">
+<div class="enccoltipotoner">TIPOS DE TONER</div>
+<div class="textotipostoner">
+El Toner meramente conocido como Tinta, es un polvo fino, que se deposita en el papel que se pretende imprimir. Al adherirse el pigmento éste se fija en el papel por medio de presión con calor, y se puede manejar de 3 formas para mantener tu equipo funcionando en óptimas condiciones, te presentamos cada una de ellas para que puedas elegir la más adecuada a tus necesidades.</div>
+</div>
+
+<div class="col2">
+<div class="enccol1">Remanufactura</div>
+<div class="iconstipostoner"><img src="images/iconremanufactura.png" width="100%" height="auto"></div>
+<div class="exptoners">El toner remanufacturado en Computación del Real te garantiza calidad de impresión ya que trabajamos bajo normas de calidad que nos permiten asegurar el óptimo funcionamiento del toner remanufacturado. Cuidamos cada componente del toner y reemplazamos las piezas que sufren algún daño, esto con la finalidad de extender el tiempo de vida del cartucho remanufacturado.</div>
+<div class="closecol1"></div>
+</div>
+
+<div class="col3">
+<div class="enccol3">Compatible</div>
+<div class="iconstipostoner"><img src="images/iconcompatible.png" width="100%" height="auto"></div>
+<div class="exptoners">El toner remanufacturado en Computación del Real te garantiza calidad de impresión ya que trabajamos bajo normas de calidad que nos permiten asegurar el óptimo funcionamiento del toner remanufacturado. Cuidamos cada componente del toner y reemplazamos las piezas que sufren algún daño, esto con la finalidad de extender el tiempo de vida del cartucho remanufacturado.</div>
+<div class="closecol1"></div>
+</div>
+
+<div class="col4">
+<div class="enccol3">Original</div>
+<div class="iconstipostoner"><img src="images/iconoriginal.png" width="100%" height="auto"></div>
+<div class="exptoners">El toner remanufacturado en Computación del Real te garantiza calidad de impresión ya que trabajamos bajo normas de calidad que nos permiten asegurar el óptimo funcionamiento del toner remanufacturado. Cuidamos cada componente del toner y reemplazamos las piezas que sufren algún daño, esto con la finalidad de extender el tiempo de vida del cartucho remanufacturado.</div>
+<div class="closecol1"></div>
+</div>
+</div>
+</div>
+<!--TONER REMANUFACTURA -->
+<div class="cont100">
+<div class="contmodtoners">
+<div class="colmarcaslogos"id="ancla">
+<div class="enccoltipotoner">TONER DE REMANUFACTURA</div>
+<div class="textotipostoner">Elije la marca y el modelo para ver la ficha técnica de tu toner y equipo de impresión</div>
+<div class="conticonmarcas">
+<div class="iconmarcas" id="hpremanufactura"><a href="#" id="hp1"><img src="images/logohp.png" width="100%" height="auto"></a></div>
+<div class="iconmarcas" id="samsungremanufactura"><a href="#" id="samsung1"><img src="images/logosamsung.png" width="100%" height="auto"></a></div>
+<div class="iconmarcas"><img src="images/logocanon.png" width="100%" height="auto"></div>
+<div class="iconmarcas2"><img src="images/logoepson.png" width="100%" height="auto"></div>
+</div>
+<div class="conticonmarcas">
+<div class="iconmarcas"><img src="images/logocanon.png" width="100%" height="auto"></div>
+<div class="iconmarcas"><img src="images/logookidata.png" width="100%" height="auto"></div>
+<div class="iconmarcas"><img src="images/logobrother.png" width="100%" height="auto"></div>
+<div class="iconmarcas2"><img src="images/logodell.png" width="100%" height="auto"></div>
+</div>
+<div class="conticonmarcas">
+<div class="iconmarcas"><img src="images/logolexmark.png" width="100%" height="auto"></div>
+<div class="iconmarcas"><img src="images/logosharp.png" width="100%" height="auto"></div>
+<div class="iconmarcas"><img src="images/logodell.png" width="100%" height="auto"></div>
+<div class="iconmarcas2"><img src="images/logoepson.png" width="100%" height="auto"></div>
+</div>
+</div>
+<!--TONER HP REMANUFACTURADO LISTADO -->
+<div class="contmarcas" id="hp2">
+<div class="collistado">
+<div class="enccoltipotoner">HEWLLET PACKARD</div>
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="C3906A">C3906A</a></div>
+<div class="mod2" id="C3909A"><a href="#" id="C3909A">C3909A</a></div>
+<div class="mod3" id="C4092A"><a href="#" id="C4092A">C4092A</a></div>
+<div class="mod4" id="C4096A"><a href="#" id="C4096A">C4096A</a></div>
+<div class="mod5" id="C4127X"><a href="#" id="C4127X">C4127X</a></div>
+<div class="mod1" id="C4129X"><a href="#" id="C4129X">C4129X</a></div>
+<div class="mod2" id="CE390A"><a href="#" id="CE390A">CE390A</a></div>
+<div class="mod3" id="CC364A"><a href="#" id="CC364A">CC364A</a></div>
+<div class="mod4" id="CE255A"><a href="#" id="CE255A">CE255A</a></div>
+<div class="mod5" id="CE410A"><a href="#" id="CE410A">CE410A</a></div>
+
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="CE411A">CE411A</a></div>
+<div class="mod2" id="CE412A"><a href="#" id="CE412A">CE412A</a></div>
+<div class="mod3" id="CE413A"><a href="#" id="CE413A">CE413A</a></div>
+<div class="mod4" id="Q1338A"><a href="#" id="Q1338A">Q1338A</a></div>
+<div class="mod5" id="C7115A"><a href="#" id="C7115A">C7115A</a></div>
+<div class="mod1" id="Q2612A"><a href="#" id="Q2612A">Q2612A</a></div>
+<div class="mod2" id="Q2613A"><a href="#" id="Q2613A">Q2613A</a></div>
+<div class="mod3" id="Q2624A"><a href="#" id="Q2624A">Q2624A</a></div>
+<div class="mod4" id="CE310A"><a href="#" id="CE310A">CE310A</a></div>
+<div class="mod5" id="CE311A"><a href="#" id="CE311A">CE311A</a></div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="CE312A">CE312A</a></div>
+<div class="mod2" id="CE313A"><a href="#" id="CE313A">CE313A</a></div>
+<div class="mod3" id="CF280A"><a href="#" id="CF280A">CF280A</a></div>
+<div class="mod4" id="CE285A"><a href="#" id="CE285A">CE285A</a></div>
+<div class="mod5" id="CE278A"><a href="#" id="CE278A">CE278A</a></div>
+<div class="mod1" id="Q3960A"><a href="#" id="Q3960A">Q3960A</a></div>
+<div class="mod2" id="Q3961A"><a href="#" id="Q3961A">Q3961A</a></div>
+<div class="mod3" id="Q3962A"><a href="#" id="Q3962A">Q3962A</a></div>
+<div class="mod4" id="Q3963A"><a href="#" id="Q3963A">Q3963A</a></div>
+<div class="mod5" id="Q3964A"><a href="#" id="Q3964A">Q3964A</a></div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="CE313A"><a href="#" id="CE313A">CE313A</a></div>
+<div class="mod3" id="CF280A"><a href="#" id="CF280A">CF280A</a></div>
+<div class="mod4" id="CE285A"><a href="#" id="CE285A">CE285A</a></div>
+<div class="mod5" id="CE278A"><a href="#" id="CE278A">CE278A</a></div>
+<div class="mod1" id="Q3960A"><a href="#" id="Q3960A">Q3960A</a></div>
+<div class="mod2" id="Q3961A"><a href="#" id="Q3961A">Q3961A</a></div>
+<div class="mod3" id="Q3962A"><a href="#" id="Q3962A">Q3962A</a></div>
+<div class="mod4" id="Q3963A"><a href="#" id="Q3963A">Q3963A</a></div>
+<div class="mod5" id="Q3964A"><a href="#" id="Q3964A">Q3964A</a></div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="CE313A"><a href="#" id="CE313A">CE313A</a></div>
+<div class="mod3" id="CF280A"><a href="#" id="CF280A">CF280A</a></div>
+<div class="mod4" id="CE285A"><a href="#" id="CE285A">CE285A</a></div>
+<div class="mod5" id="CE278A"><a href="#" id="CE278A">CE278A</a></div>
+<div class="mod1" id="Q3960A"><a href="#" id="Q3960A">Q3960A</a></div>
+<div class="mod2" id="Q3961A"><a href="#" id="Q3961A">Q3961A</a></div>
+<div class="mod3" id="Q3962A"><a href="#" id="Q3962A">Q3962A</a></div>
+<div class="mod4" id="Q3963A"><a href="#" id="Q3963A">Q3963A</a></div>
+<div class="mod5" id="Q3964A"><a href="#" id="Q3964A">Q3964A</a></div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+</div>
+<!--TONER HP REMANUFACTURADO POR PRODUCTO -->
+<div class="collistado" id="c4191a"  style=" display:none;">
+<div class="enccoltipotoner">HEWLLET PACKARD C4191A NEGRO</div>
+<div class="contmod">
+<div class="imgtoner"><img src="imgtoners/hp/C4191A.png" width="100%" height="auto"></div>
+<div class="modtoner">Toner No. C4191A Negro</div>
+<div class="imgimpresora"><img src="imgtoners/hp/C4191A-IMP.png" width="100%" height="auto"></div>
+<div class="compatibilidad">Toner para Impresoras Laser jet 4500/4550</div>
+<div class="rendimiento">Rendimiento de 9,000 pág. aprox.</div>
+</div>
+</div>
+<div class="collistado" id="q6511a"  style=" display:none;">
+<div class="enccoltipotoner">HEWLLET PACKARD Q6511A NEGRO</div>
+<div class="contmod">
+<div class="imgtoner"><img src="imgtoners/hp/Q6511A.png" width="100%" height="auto"></div>
+<div class="modtoner">Toner No. Q6511A Negro</div>
+<div class="imgimpresora"><img src="imgtoners/hp/Q6511A-IMP.png" width="100%" height="auto"></div>
+<div class="compatibilidad">Toner para Impresoras HP LaserJet 2410/2420/2430</div>
+<div class="rendimiento">Rendimiento de 6,000 pág. aprox.</div>
+</div>
+</div>
+</div>
+<!--TONER HP REMANUFACTURADO LISTADO -->
+<div class="contmarcas"id="samsung2remanufactura"  style=" display:none;">
+<div class="collistado">
+<div class="enccoltipotoner">SAMSUNG</div>
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+</div>
+
+<div class="collistado">
+<div class="enccoltipotoner">SAMSUNG C4191A NEGRO</div>
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+<!--TONER COMPATIBLE -->
+<div class="cont100">
+<div class="contmodtoners">
+<div class="colmarcaslogos"id="ancla2">
+<div class="enccoltipotonerverde">TONER COMPATIBLE</div>
+<div class="textotipostoner">Elije la marca y el modelo para ver la ficha técnica de tu toner y equipo de impresión</div>
+<div class="conticonmarcas">
+<div class="iconmarcas" id="hpcompatible"><a href="#" id="hp1compatible"><img src="images/logohp.png" width="100%" height="auto"></a></div>
+<div class="iconmarcas" id="samsungcompatible"><a href="#" id="samsung1compatible"><img src="images/logosamsung.png" width="100%" height="auto"></a></div>
+<div class="iconmarcas"><img src="images/logocanon.png" width="100%" height="auto"></div>
+<div class="iconmarcas2"><img src="images/logoepson.png" width="100%" height="auto"></div>
+</div>
+<div class="conticonmarcas">
+<div class="iconmarcas"><img src="images/logocanon.png" width="100%" height="auto"></div>
+<div class="iconmarcas"><img src="images/logookidata.png" width="100%" height="auto"></div>
+<div class="iconmarcas"><img src="images/logobrother.png" width="100%" height="auto"></div>
+<div class="iconmarcas2"><img src="images/logodell.png" width="100%" height="auto"></div>
+</div>
+<div class="conticonmarcas">
+<div class="iconmarcas"><img src="images/logolexmark.png" width="100%" height="auto"></div>
+<div class="iconmarcas"><img src="images/logosharp.png" width="100%" height="auto"></div>
+<div class="iconmarcas"><img src="images/logodell.png" width="100%" height="auto"></div>
+<div class="iconmarcas2"><img src="images/logoepson.png" width="100%" height="auto"></div>
+</div>
+</div>
+<!--TONER HP COMPATIBLE LISTADO -->
+<div class="contmarcas" id="hp2compatible">
+<div class="collistado">
+<div class="enccoltipotonerverde">HEWLLET PACKARD</div>
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+</div>
+<!--TONER HP COMPATIBLE POR PRODUCTO -->
+<div class="collistado" id="c4191acompatible"  style=" display:none;">
+<div class="enccoltipotonerverde">HEWLLET PACKARD C4191A NEGRO</div>
+<div class="contmod">
+<div class="imgtoner"><img src="imgtoners/hp/C4191A.png" width="100%" height="auto"></div>
+<div class="modtoner">Toner No. C4191A Negro</div>
+<div class="imgimpresora"><img src="imgtoners/hp/C4191A-IMP.png" width="100%" height="auto"></div>
+<div class="compatibilidad">Toner para Impresoras Laser jet 4500/4550</div>
+<div class="rendimiento">Rendimiento de 9,000 pág. aprox.</div>
+</div>
+</div>
+<div class="collistado" id="q6511acompatible"  style=" display:none;">
+<div class="enccoltipotonerverde">HEWLLET PACKARD Q6511A NEGRO</div>
+<div class="contmod">
+<div class="imgtoner"><img src="imgtoners/hp/Q6511A.png" width="100%" height="auto"></div>
+<div class="modtoner">Toner No. Q6511A Negro</div>
+<div class="imgimpresora"><img src="imgtoners/hp/Q6511A-IMP.png" width="100%" height="auto"></div>
+<div class="compatibilidad">Toner para Impresoras HP LaserJet 2410/2420/2430</div>
+<div class="rendimiento">Rendimiento de 6,000 pág. aprox.</div>
+</div>
+</div>
+</div>
+
+<div class="contmarcas"id="samsung2compatible"  style=" display:none;">
+<div class="collistado">
+<div class="enccoltipotonerverde">SAMSUNG</div>
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+</div>
+
+<div class="collistado">
+<div class="enccoltipotonerverde">SAMSUNG C4191A NEGRO</div>
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+</div>
+</div>
+</div>
+</div>
+
+<!--TONER ORIGINAL -->
+<div class="cont100">
+<div class="contmodtoners">
+<div class="colmarcaslogos"id="ancla3">
+<div class="enccoltipotonernaranja">TONER ORIGINAL</div>
+<div class="textotipostoner">Elije la marca y el modelo para ver la ficha técnica de tu toner y equipo de impresión</div>
+<div class="conticonmarcas">
+<div class="iconmarcas" id="hpcompatible"><a href="#" id="hp1compatible"><img src="images/logohp.png" width="100%" height="auto"></a></div>
+<div class="iconmarcas" id="samsungcompatible"><a href="#" id="samsung1compatible"><img src="images/logosamsung.png" width="100%" height="auto"></a></div>
+<div class="iconmarcas"><img src="images/logocanon.png" width="100%" height="auto"></div>
+<div class="iconmarcas2"><img src="images/logoepson.png" width="100%" height="auto"></div>
+</div>
+<div class="conticonmarcas">
+<div class="iconmarcas"><img src="images/logocanon.png" width="100%" height="auto"></div>
+<div class="iconmarcas"><img src="images/logookidata.png" width="100%" height="auto"></div>
+<div class="iconmarcas"><img src="images/logobrother.png" width="100%" height="auto"></div>
+<div class="iconmarcas2"><img src="images/logodell.png" width="100%" height="auto"></div>
+</div>
+<div class="conticonmarcas">
+<div class="iconmarcas"><img src="images/logolexmark.png" width="100%" height="auto"></div>
+<div class="iconmarcas"><img src="images/logosharp.png" width="100%" height="auto"></div>
+<div class="iconmarcas"><img src="images/logodell.png" width="100%" height="auto"></div>
+<div class="iconmarcas2"><img src="images/logoepson.png" width="100%" height="auto"></div>
+</div>
+</div>
+<!--TONER HP ORIGINAL LISTADO -->
+<div class="contmarcas" id="hp2compatible">
+<div class="collistado">
+<div class="enccoltipotonernaranja">HEWLLET PACKARD</div>
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+</div>
+<!--TONER HP ORIGINAL POR PRODUCTO -->
+<div class="collistado" id="c4191acompatible"  style=" display:none;">
+<div class="enccoltipotonernaranja">HEWLLET PACKARD C4191A NEGRO</div>
+<div class="contmod">
+<div class="imgtoner"><img src="imgtoners/hp/C4191A.png" width="100%" height="auto"></div>
+<div class="modtoner">Toner No. C4191A Negro</div>
+<div class="imgimpresora"><img src="imgtoners/hp/C4191A-IMP.png" width="100%" height="auto"></div>
+<div class="compatibilidad">Toner para Impresoras Laser jet 4500/4550</div>
+<div class="rendimiento">Rendimiento de 9,000 pág. aprox.</div>
+</div>
+</div>
+<div class="collistado" id="q6511acompatible"  style=" display:none;">
+<div class="enccoltipotonernaranja">HEWLLET PACKARD Q6511A NEGRO</div>
+<div class="contmod">
+<div class="imgtoner"><img src="imgtoners/hp/Q6511A.png" width="100%" height="auto"></div>
+<div class="modtoner">Toner No. Q6511A Negro</div>
+<div class="imgimpresora"><img src="imgtoners/hp/Q6511A-IMP.png" width="100%" height="auto"></div>
+<div class="compatibilidad">Toner para Impresoras HP LaserJet 2410/2420/2430</div>
+<div class="rendimiento">Rendimiento de 6,000 pág. aprox.</div>
+</div>
+</div>
+</div>
+
+<div class="contmarcas"id="samsung2compatible"  style=" display:none;">
+<div class="collistado">
+<div class="enccoltipotonernaranja">SAMSUNG</div>
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+</div>
+
+<div class="collistado">
+<div class="enccoltipotonernaranja">SAMSUNG C4191A NEGRO</div>
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+
+
+<div class="mod1" id="hpmodelosremanufactura"><a href="#" id="hpc4191a">C4191A</a></div>
+<div class="mod2" id="hpq6511a"><a href="#" id="hpcq6511a">Q6511A</a></div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+<div class="mod1">C4191A</div>
+<div class="mod2">C4191A</div>
+<div class="mod3">C4191A</div>
+<div class="mod4">C4191A</div>
+<div class="mod5">C4191A</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="contcotizacion" id="anclahome">
+<div class="conttextoformulario">
+<div class="enccoltipotoner">SOLICITAR TONER</div>
+<div class="iconformulario"><img src="images/iconescribenos.png" width="100%" height="auto"></div>
+<div class="textoformulario">Si deseas realizar un pedido llena el siguiente formulario escribiéndonos la marca y modelo de tu toner. De igual forma escríbenos si es para remanufactura, si deseas comprar un toner compatible u original. Si no encontraste el modelo de tu toner, no te preocupes, llámanos al teléfono (444) 1·66·35·67 y 68 podemos ayudarte. ¡ Gracias !</div>
+</div>
+
+<div class="contformulario">
+<section class="formulario">
+<form action="contacto.php" method="post">
+<label for="nombre">Nombre:</label>
+<input id="nombre" type="text" name="nombre"  required />
+
+<label for="empresa">Empresa:</label>
+<input id="empresa" type="text" name="empresa"  required />
+
+<label for="email">Email:</label>
+<input id="email" type="email" name="email"  required />
+
+<label for="telefono">Teléfono:</label>
+<input id="telefono" type="telefono" name="telefono"  required />
+
+<label for="marca">Marca:</label>
+<input id="marca" type="marca" name="marca"  required />
+
+<label for="modelo">Modelo:</label>
+<input id="modelo" type="modelo" name="modelo"  required />
+
+
+<label for="cotizar">Cotizar:</label>
+<textarea id="cotizar" name="cotizar"  required></textarea>
+
+<input id="submit" type="submit" name="submit" value="Enviar" />
+</form>
+</section>
+</div>
+</div>
+
+<div class="cont100">
+<div class="contcentral">
+<div class="titulobestcomputer">Best computer solutions</div>
+</div>
+</div>
+
+<div class="cont100cierre">
+<div class="contcentralcierre">
+<div class="contcontactoizq">¡Contáctanos!<br>
+1·66·35·67 | 68</div>
+<div class="contcontactocentral">Mariano Jiménez 474  Col. Alamitos C.P. 78280,  San Luis Potosí, S.L.P. Todos los derechos reservados 2014.</div>
+<div class="contcontactoder">¡Síguenos!
+<div class="contimgface"><img src="images/logoface.png" width="25" height="25"> </div></div>
+</div>
+</div>
+</body>
+</html>
